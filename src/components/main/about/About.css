@@ -1,0 +1,195 @@
+.about-section {
+  padding: 6rem 1rem;
+  background: linear-gradient(to bottom right, #f3e8ff, #fdf2f8, #fef9c346);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+/* .about-grid > div {
+  min-width: 0;
+} */
+
+@media (min-width: 768px) {
+  .about-grid {
+   /* grid-template-columns: 1fr 1fr;  */
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  }
+}
+
+.about-image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;
+  
+}
+
+.about-image-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #002e5d, #00a3e0);
+  border-radius: 24px;
+  filter: blur(40px);
+  opacity: 0.2;
+  max-width: 100%; /* Ajustable */
+  width: 100%;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); 
+  
+}
+
+/* .about-image-el {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+} */
+
+.about-image img {
+  width: 100%;
+  display: block; /* Evita espacios blancos */
+  object-fit: cover;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #2d3748;
+  font-weight: normal;
+}
+
+.about-text p {
+  color: #64748B;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-text .highlight {
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.about-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;  
+}
+
+.value-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-icon.red {
+  background-color: #0f172a;
+}
+
+.value-icon.yellow {
+  background-color: #0f172a;
+}
+
+.value-icon.purple {
+  background-color: #0f172a;
+}
+
+/* ----------- VALORES INFERIORES ----------- */
+.about-values-section {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.values-header h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  color: #2d3748;
+}
+
+.values-header p {
+  color: #64748B;
+  margin-bottom: 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 640px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.value-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.value-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pink-bg, .yellow-bg, .purple-bg {
+  background: linear-gradient(to bottom right, #002e5d, #00a3e0);
+}
+
+/* .yellow-bg {
+  background: linear-gradient(to bottom right, #facc15, #f97316);
+}
+
+.purple-bg {
+  background: linear-gradient(to bottom right, #a855f7, #7c3aed);
+} */
+
+.value-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+  font-weight: normal;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: #64748B;
+  line-height: 1.5;
+  font-weight: normal;
+}

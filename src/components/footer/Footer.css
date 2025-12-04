@@ -1,0 +1,171 @@
+.footer {
+  background-color: #0f172a;
+  color: white;
+  padding: 48px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-grid > :first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-grid > :first-child {
+    grid-column: auto;
+  }
+}
+
+/* Marca */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #eb1010, #f97316);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: white;
+    font-weight: bold;
+  }
+}
+
+.footer-logo-text {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.footer-description {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Títulos */
+.footer-title {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  font-weight: normal;
+  color: white;
+}
+
+/* Listas */
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-list li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.footer-list a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-list a:hover {
+  color: white;
+}
+
+.footer-navigation .btn-navigation {
+  border: 0;
+  color: #94a3b8;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-navigation .btn-navigation:hover {
+  color: white;
+}
+
+/* Íconos sociales */
+.footer-socials {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.footer-socials a:hover { 
+  transform: scale(1.1);
+}
+
+/* Parte inferior */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  padding-top: 32px;
+  text-align: center;
+  font-size: 0.9rem;
+  p {
+    color: #94a3b8;
+  }
+}
+
+.whatsapp-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #25d366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 9999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-fixed img {
+  width: 40px;
+  height: 40px;
+}
+
+.whatsapp-fixed:hover {
+  transform: scale(1.1);
+}
+
