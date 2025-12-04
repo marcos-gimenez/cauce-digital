@@ -19,7 +19,7 @@ export function Header() {
         {/* Seccion del logo */}
         <div className="logo-section" onClick={() => scrollToSection('hero')}>
           <div className="logo-circle">
-            <img className="img-logo" src="../../../assets/images/logo.png" alt="logo cauce digital" />
+            <img className="img-logo" src="/images/logo.png" alt="logo cauce digital" />
           </div>
           <span className="logo-name">Cauce Digital</span>
         </div>

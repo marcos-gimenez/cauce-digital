@@ -9,7 +9,7 @@ export function About() {
           <div className="about-image-wrapper">
             <div className="about-image-bg"></div>
             <div className="about-image">
-              <img src="../../../../assets/images/cauce-digital-2.webp" alt="Coordinadora Cauce Digital" />
+              <img src="/images/cauce-digital-2.webp" alt="Coordinadora Cauce Digital" />
             </div>
           </div>
 

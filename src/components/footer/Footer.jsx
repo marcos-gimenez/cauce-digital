@@ -18,7 +18,7 @@ export function Footer() {
               <div className="footer-logo-circle">
                 <img
                   className="footer-logo-circle"
-                  src="../../../assets/images/logo.png"
+                  src="/images/logo.png"
                   alt="logo cauce digital"
                 />
               </div>
@@ -91,7 +91,7 @@ export function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src="/assets/images/whatsapp.png" alt="WhatsApp" />
+        <img src="/images/whatsapp.png" alt="WhatsApp" />
       </a>
     </footer>
   );

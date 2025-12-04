@@ -38,7 +38,7 @@ export function Hero() {
           <div className="hero-image-wrapper">
             <div className="hero-image-bg"></div>
             <div className="hero-image">
-              <img src="../../../../assets/images/cauce-digital-1.webp" alt="Foto de Ejemplo" />
+              <img src="/images/cauce-digital-1.webp" alt="Foto de Ejemplo" />
             </div>
           </div>
         </div>
