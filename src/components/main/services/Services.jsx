@@ -1,4 +1,4 @@
-import { Calendar, BarChart3, Palette, MessageCircle, Mail } from 'lucide-react';
+import { Calendar, BarChart3, Palette } from 'lucide-react';
 import './Services.css';
 
 export function Services() {

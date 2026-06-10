@@ -1,4 +1,4 @@
-import { Heart, Users, Target, CheckCircle2 } from 'lucide-react';
+import { Users, Target, CheckCircle2 } from 'lucide-react';
 import './About.css';
 
 export function About() {

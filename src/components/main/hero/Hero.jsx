@@ -1,10 +1,7 @@
-import { useScrollNavigation } from '../../hooks/ScrollNavigation.js';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import './Hero.css';
 
 export function Hero() {
-  const { scrollTo } = useScrollNavigation();
-
   return (
     <section id="hero" className="hero-section">
       <div className="hero-container">
@@ -26,19 +23,19 @@ export function Hero() {
             </p>
 
             <div className="hero-buttons">
-              <button onClick={() => scrollTo('contact')} className="btn-primary">
+              <a href="#contact" className="btn-primary">
                 Comenzar ahora <ArrowRight size={20} color="white" />
-              </button>
-              <button onClick={() => scrollTo('services')} className="btn-outline">
+              </a>
+              <a href="#services" className="btn-outline">
                 Ver servicios
-              </button>
+              </a>
             </div>
           </div>
 
           <div className="hero-image-wrapper">
             <div className="hero-image-bg"></div>
             <div className="hero-image">
-              <img src="/images/cauce-digital-1.webp" alt="Foto de Ejemplo" />
+              <img src="/images/cauce-digital-1.webp" alt="Equipo de Cauce Digital trabajando en estrategia digital" />
             </div>
           </div>
         </div>

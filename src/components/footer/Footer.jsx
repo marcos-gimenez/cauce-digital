@@ -1,4 +1,3 @@
-import { useScrollNavigation } from '../hooks/ScrollNavigation.js';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -6,7 +5,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
-  const { scrollTo } = useScrollNavigation();
 
   return (
     <footer className="footer">
@@ -34,24 +32,24 @@ export function Footer() {
             <h4 className="footer-title">Navegación</h4>
             <ul className="footer-list">
               <li>
-                <button className="btn-navigation" onClick={() => scrollTo('hero')}>
+                <a className="btn-navigation" href="#hero">
                   Inicio
-                </button>
+                </a>
               </li>
               <li>
-                <button className="btn-navigation" onClick={() => scrollTo('services')}>
+                <a className="btn-navigation" href="#services">
                   Servicios
-                </button>
+                </a>
               </li>
               <li>
-                <button className="btn-navigation" onClick={() => scrollTo('about')}>
+                <a className="btn-navigation" href="#about">
                   Nosotros
-                </button>
+                </a>
               </li>
               <li>
-                <button className="btn-navigation" onClick={() => scrollTo('contact')}>
+                <a className="btn-navigation" href="#contact">
                   Contacto
-                </button>
+                </a>
               </li>
             </ul>
           </div>
@@ -66,13 +64,14 @@ export function Footer() {
               <li>Fray Luis Beltrán, Santa Fe</li>
             </ul>
             <div className="footer-socials">
-              <a href="mailto:digitalcauce@gmail.com">
+              <a href="mailto:digitalcauce@gmail.com" aria-label="Enviar email a Cauce Digital">
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <a
                 href="https://instagram.com/cauce_digital"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Abrir Instagram de Cauce Digital"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
@@ -90,6 +89,7 @@ export function Footer() {
         className="whatsapp-fixed"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Enviar mensaje por WhatsApp a Cauce Digital"
       >
         <img src="/images/whatsapp.png" alt="WhatsApp" />
       </a>

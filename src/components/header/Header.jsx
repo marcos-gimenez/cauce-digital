@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useScrollNavigation } from '../hooks/ScrollNavigation.js'
 import './Header.css';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { scrollTo } = useScrollNavigation();
 
-  const scrollToSection = (id) => {
-    scrollTo(id);
+  const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
@@ -17,41 +14,48 @@ export function Header() {
       <div className="header-container">
 
         {/* Seccion del logo */}
-        <div className="logo-section" onClick={() => scrollToSection('hero')}>
+        <a className="logo-section" href="#hero" aria-label="Ir al inicio" onClick={closeMenu}>
           <div className="logo-circle">
             <img className="img-logo" src="/images/logo.png" alt="logo cauce digital" />
           </div>
           <span className="logo-name">Cauce Digital</span>
-        </div>
+        </a>
 
         {/* Navegacion de escritorio */}
-        <nav className="nav-desktop">
-          <button className="btn-nav" onClick={() => scrollToSection('hero')}>
+        <nav className="nav-desktop" aria-label="Navegacion principal">
+          <a className="btn-nav" href="#hero">
             Inicio
-          </button>
-          <button className="btn-nav" onClick={() => scrollToSection('services')}>
+          </a>
+          <a className="btn-nav" href="#services">
             Servicios
-          </button>
-          <button className="btn-nav" onClick={() => scrollToSection('about')}>
+          </a>
+          <a className="btn-nav" href="#about">
             Nosotros
-          </button>
-          <button className="btn-contact" onClick={() => scrollToSection('contact')}>
+          </a>
+          <a className="btn-contact" href="#contact">
             Contacto
-          </button>
+          </a>
         </nav>
 
         {/* Boton para mobiles */}
-        <button className="menu-button" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button
+          className="menu-button"
+          type="button"
+          aria-label={isMenuOpen ? 'Cerrar menu' : 'Abrir menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-navigation"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Navegacion para mobiles */}
         {isMenuOpen && (
-          <nav className="nav-mobile">
-            <button className="btn-nav" onClick={() => scrollToSection('hero')}>Inicio</button>
-            <button className="btn-nav" onClick={() => scrollToSection('services')}>Servicios</button>
-            <button className="btn-nav" onClick={() => scrollToSection('about')}>Nosotros</button>
-            <button className="btn-contact" onClick={() => scrollToSection('contact')}>Contacto</button>
+          <nav id="mobile-navigation" className="nav-mobile" aria-label="Navegacion mobile">
+            <a className="btn-nav" href="#hero" onClick={closeMenu}>Inicio</a>
+            <a className="btn-nav" href="#services" onClick={closeMenu}>Servicios</a>
+            <a className="btn-nav" href="#about" onClick={closeMenu}>Nosotros</a>
+            <a className="btn-contact" href="#contact" onClick={closeMenu}>Contacto</a>
           </nav>
         )}
       </div>
