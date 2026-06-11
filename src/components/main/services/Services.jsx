@@ -1,45 +1,72 @@
-import { Calendar, BarChart3, Palette } from 'lucide-react';
+import { BarChart3, Calendar, Palette } from 'lucide-react';
 import './Services.css';
 
-export function Services() {
-  const services = [
-    {
-      icon: Calendar,
-      title: 'Estrategias Digitales',
-      description:
-        'Aportamos a tu proyecto con contenido sincero y planes simples que fortalecen tu identidad en redes.',
-    },
-    {
-      icon: BarChart3,
-      title: 'Campañas publicitarias (Meta Ads)',
-      description:
-        'Acompañamos tu iniciativa digital con campañas claras, sencillas y pensadas para tu comunidad.',
-    },
-    {
-      icon: Palette,
-      title: 'Diseño web',
-      description: 'Creamos sitios web funcionales y coherentes con tu marca, para transmitir solidez y transparencia.',
-    },
-  ];
+const services = [
+  {
+    icon: Calendar,
+    title: 'Comunicación digital',
+    description:
+      'Acompañamiento estratégico para ordenar, fortalecer y sostener la presencia digital de tu proyecto.',
+    items: [
+      'Gestión y acompañamiento en redes sociales',
+      'Análisis de cuentas',
+      'Desarrollo y planificación de estrategia de contenidos',
+      'Copywriting y textos para redes y campañas',
+      'Optimización de perfiles',
+      'Asesorías en comunicación digital',
+    ],
+  },
+  {
+    icon: Palette,
+    title: 'Producción de contenido',
+    description:
+      'Piezas visuales y contenido pensado para comunicar con claridad en redes, instituciones y campañas.',
+    items: [
+      'Edición de piezas gráficas',
+      'Servicio de fotografía',
+      'Servicio de video',
+      'Contenido visual para redes, instituciones y campañas',
+    ],
+  },
+  {
+    icon: BarChart3,
+    title: 'Diseño web y aplicaciones',
+    description:
+      'Desarrollo de espacios digitales profesionales y herramientas a medida para mejorar procesos.',
+    items: [
+      'Diseño y desarrollo web',
+      'Landings institucionales',
+      'Sitios profesionales',
+      'Aplicaciones web a medida',
+      'Soluciones digitales para gestión interna o atención al público',
+    ],
+  },
+];
 
+export function Services() {
   return (
     <section id="services" className="services-section">
       <div className="services-container">
         <div className="services-header">
-          <h2>Servicios que impulsan tu crecimiento</h2>
-          <p>Ofrecemos soluciones integrales de marketing digital adaptadas a cada cliente</p>
+          <h2>Servicios principales</h2>
+          <p>Comunicación, contenido y tecnología para proyectos que necesitan crecer con orden y criterio.</p>
         </div>
         <div className="services-grid">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <div key={index} className={`service-card service-card-${index}`}>
-                <div className={`service-icon icon-${index}`}>
+              <article key={service.title} className={`service-card service-card-${index}`}>
+                <div className={`service-icon icon-${index}`} aria-hidden="true">
                   <Icon size={28} color="#fff" />
                 </div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-              </div>
+                <ul className="service-list">
+                  {service.items.map(item => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </article>
             );
           })}
         </div>

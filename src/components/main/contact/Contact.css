@@ -37,6 +37,13 @@
   line-height: 1.6;
 }
 
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* BUTTON */
 .contact-button {
   display: inline-flex;
@@ -53,7 +60,21 @@
   transition: 0.3s ease;
 }
 
+.contact-button-secondary {
+  background: transparent;
+  color: #002e5d;
+  border: 2px solid #002e5d;
+}
+
 .contact-button:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(90, 141, 238, 0.35);
+}
+
+@media (min-width: 768px) {
+  .contact-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

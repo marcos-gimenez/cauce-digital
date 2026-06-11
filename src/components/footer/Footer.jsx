@@ -10,7 +10,6 @@ export function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-grid">
-          {/* Logo y descripción */}
           <div className="footer-brand">
             <div className="footer-logo">
               <div className="footer-logo-circle">
@@ -23,11 +22,10 @@ export function Footer() {
               <span className="footer-logo-text">Cauce Digital</span>
             </div>
             <p className="footer-description">
-              Marketing digital cercano y genuino para impulsar tu negocio
+              Comunicación digital cercana y genuina para impulsar tu proyecto
             </p>
           </div>
 
-          {/* Navegación */}
           <div className="footer-navigation">
             <h4 className="footer-title">Navegación</h4>
             <ul className="footer-list">
@@ -54,7 +52,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contacto */}
           <div>
             <h4 className="footer-title">Contacto</h4>
             <ul className="footer-list">
@@ -83,7 +80,6 @@ export function Footer() {
           <p>© {currentYear} Cauce Digital. Sitio desarrollado por Marcos Giménez.</p>
         </div>
       </div>
-      {/* Botón fijo de WhatsApp */}
       <a
         href="https://wa.me/5493413570792"
         className="whatsapp-fixed"

@@ -9,25 +9,25 @@ export function Hero() {
           <div className="hero-text">
             <div className="hero-badge">
               <Sparkles size={16} />
-              <span>Marketing digital cercano y genuino</span>
+              <span>Comunicación digital cercana y estratégica</span>
             </div>
 
             <h1 className="hero-title">
-              Transformamos tu marca con <span className="highlight-text">ideas auténticas.</span>
+              Comunicación digital, diseño web y <span className="highlight-text">soluciones digitales.</span>
             </h1>
 
             <p className="hero-description">
-              Somos Cauce Digital, y ayudamos a reformular tu proyecto a través del marketing. Creamos
-              soluciones personalizadas que garantizan una base sólida en el mundo digital,
-              potenciando tu forma de habitar este espacio.
+              Acompañamos a instituciones, profesionales y proyectos en la construcción de una presencia digital clara,
+              funcional y coherente. Desarrollamos estrategias de comunicación, contenido, sitios web y herramientas
+              digitales pensadas para ordenar procesos y potenciar vínculos.
             </p>
 
             <div className="hero-buttons">
               <a href="#contact" className="btn-primary">
-                Comenzar ahora <ArrowRight size={20} color="white" />
+                Quiero mejorar mi comunicación digital <ArrowRight size={20} color="white" />
               </a>
               <a href="#services" className="btn-outline">
-                Ver servicios
+                Consultar por una web o aplicación
               </a>
             </div>
           </div>
