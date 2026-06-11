@@ -1,0 +1,60 @@
+.sectors-section {
+  padding: 6rem 1rem;
+  background: linear-gradient(to bottom right, #f8faff, #ffffff);
+}
+
+.sectors-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectors-header {
+  max-width: 760px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.sectors-header h2 {
+  color: #2d3748;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.sectors-header p {
+  color: #64748B;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1.5rem;
+}
+
+.sector-card {
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 46, 93, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  transition: 0.3s ease;
+}
+
+.sector-card:hover {
+  border-color: rgba(0, 46, 93, 0.32);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.sector-card h3 {
+  color: #2d3748;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.sector-card p {
+  color: #64748B;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
