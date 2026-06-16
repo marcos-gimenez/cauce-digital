@@ -6,7 +6,7 @@ const services = [
     icon: Calendar,
     title: 'Comunicación digital',
     description:
-      'Convertimos ideas en estrategias de comunicación claras y sostenibles. Antes de avanzar, analizamos el proyecto, sus objetivos, sus recursos y las personas a las que quiere llegar. A partir de esa información, construimos una estrategia realista y fácil de sostener en el tiempo.',
+      'Convertimos ideas en estrategias de comunicación claras y sostenibles. Analizamos el proyecto, sus objetivos, sus recursos y las personas a las que quiere llegar para construir una estrategia realista y fácil de sostener.',
     items: [
       'Administración de redes',
       'Estrategias de comunicación',
@@ -20,7 +20,7 @@ const services = [
     icon: Palette,
     title: 'Producción de contenido',
     description:
-      'Las personas empatizan con historias, no con publicaciones aisladas. Lo audiovisual es uno de los pilares fundamentales para construir una presencia digital auténtica y memorable. El contenido que proponemos está alineado con la marca, cuidando tanto la estética como el mensaje.',
+      'Creamos contenido alineado con la marca, cuidando tanto la estética como el mensaje para construir una presencia digital auténtica y memorable.',
     items: [
       'Diseño de piezas gráficas',
       'Producción integral de contenido',
@@ -32,13 +32,13 @@ const services = [
     icon: BarChart3,
     title: 'Diseño web y aplicaciones',
     description:
-      'Cuando las redes cumplen su función, llega el momento de dar un paso más. Las redes generan cercanía. La web aporta profesionalismo. Las aplicaciones aportan eficiencia. Desarrollamos herramientas digitales simples, funcionales y adaptadas a cada proyecto.',
+      'Desarrollamos sitios, aplicaciones web y soluciones digitales simples, funcionales y adaptadas a cada proyecto.',
     items: [
-      'Diseño y desarrollo web',
+      'Sitios institucionales',
       'Landing pages',
       'Aplicaciones web',
       'Sistemas de turnos',
-      'Soluciones digitales internas y externas',
+      'Soluciones digitales a medida',
     ],
   },
 ];
