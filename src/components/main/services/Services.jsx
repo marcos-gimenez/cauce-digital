@@ -6,39 +6,39 @@ const services = [
     icon: Calendar,
     title: 'Comunicación digital',
     description:
-      'Acompañamiento estratégico para ordenar, fortalecer y sostener la presencia digital de tu proyecto.',
+      'Convertimos ideas en estrategias de comunicación claras y sostenibles. Antes de avanzar, analizamos el proyecto, sus objetivos, sus recursos y las personas a las que quiere llegar. A partir de esa información, construimos una estrategia realista y fácil de sostener en el tiempo.',
     items: [
-      'Gestión y acompañamiento en redes sociales',
-      'Análisis de cuentas',
-      'Desarrollo y planificación de estrategia de contenidos',
-      'Copywriting y textos para redes y campañas',
-      'Optimización de perfiles',
-      'Asesorías en comunicación digital',
+      'Administración de redes',
+      'Estrategias de comunicación',
+      'Asesoramiento personalizado',
+      'Organización de contenidos',
+      'Calendarios de publicación',
+      'Análisis y optimización continua',
     ],
   },
   {
     icon: Palette,
     title: 'Producción de contenido',
     description:
-      'Piezas visuales y contenido pensado para comunicar con claridad en redes, instituciones y campañas.',
+      'Las personas empatizan con historias, no con publicaciones aisladas. Lo audiovisual es uno de los pilares fundamentales para construir una presencia digital auténtica y memorable. El contenido que proponemos está alineado con la marca, cuidando tanto la estética como el mensaje.',
     items: [
-      'Edición de piezas gráficas',
-      'Servicio de fotografía',
-      'Servicio de video',
-      'Contenido visual para redes, instituciones y campañas',
+      'Diseño de piezas gráficas',
+      'Producción integral de contenido',
+      'Servicio de fotografía y video',
+      'Edición de imágenes y videos',
     ],
   },
   {
     icon: BarChart3,
     title: 'Diseño web y aplicaciones',
     description:
-      'Desarrollo de espacios digitales profesionales y herramientas a medida para mejorar procesos.',
+      'Cuando las redes cumplen su función, llega el momento de dar un paso más. Las redes generan cercanía. La web aporta profesionalismo. Las aplicaciones aportan eficiencia. Desarrollamos herramientas digitales simples, funcionales y adaptadas a cada proyecto.',
     items: [
       'Diseño y desarrollo web',
-      'Landings institucionales',
-      'Sitios profesionales',
-      'Aplicaciones web a medida',
-      'Soluciones digitales para gestión interna o atención al público',
+      'Landing pages',
+      'Aplicaciones web',
+      'Sistemas de turnos',
+      'Soluciones digitales internas y externas',
     ],
   },
 ];
@@ -49,7 +49,7 @@ export function Services() {
       <div className="services-container">
         <div className="services-header">
           <h2>Servicios principales</h2>
-          <p>Comunicación, contenido y tecnología para proyectos que necesitan crecer con orden y criterio.</p>
+          <p>Comunicación, contenido y tecnología con criterio.</p>
         </div>
         <div className="services-grid">
           {services.map((service, index) => {

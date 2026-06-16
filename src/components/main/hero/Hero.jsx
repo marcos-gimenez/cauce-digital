@@ -7,19 +7,20 @@ export function Hero() {
       <div className="hero-container">
         <div className="hero-grid">
           <div className="hero-text">
-            <div className="hero-badge">
+            {/* <div className="hero-badge">
               <Sparkles size={16} />
-              <span>Comunicación digital cercana y estratégica</span>
-            </div>
+              <span>Comunicación y soluciones digitales</span>
+            </div> */}
 
             <h1 className="hero-title">
-              Comunicación digital, diseño web y <span className="highlight-text">soluciones digitales.</span>
+              Comunicación y <span className="highlight-text">soluciones digitales.</span>
             </h1>
 
             <p className="hero-description">
-              Acompañamos a instituciones, profesionales y proyectos en la construcción de una presencia digital clara,
-              funcional y coherente. Desarrollamos estrategias de comunicación, contenido, sitios web, aplicaciones y
-              herramientas propias para ordenar procesos y potenciar vínculos.
+              Acompañamos proyectos en la construcción de una comunicación clara, funcional y
+alineada con los valores que representan. Somos un equipo de trabajo que integra
+comunicación, diseño, tecnología y soluciones administrativas para que cada
+proyecto pueda crecer de forma organizada, profesional y sostenible.
             </p>
 
             <div className="hero-buttons">

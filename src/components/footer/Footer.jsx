@@ -77,11 +77,11 @@ export function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {currentYear} Cauce Digital. Sitio desarrollado por Marcos Giménez.</p>
+          <p>© {currentYear} Cauce Digital. Todos los derechos reservados.</p>
         </div>
       </div>
       <a
-        href="https://wa.me/5493413570792"
+        href="https://wa.me/5493413697253"
         className="whatsapp-fixed"
         target="_blank"
         rel="noopener noreferrer"

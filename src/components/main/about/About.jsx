@@ -19,12 +19,13 @@ export function About() {
               Soy <span className="highlight">Anahí Giménez</span>, creadora de Cauce Digital.
             </p>
             <p>
-              Junto con mi equipo, trabajamos con una mirada cercana, clara y estratégica para que cada proyecto pueda
-              comunicar mejor, ordenar su presencia online y desarrollar soluciones digitales útiles.
+              Junto a mi equipo, acompañamos proyectos desde una mirada crítica, clara y estratégica, ayudándolos a comunicar mejor, organizar sus procesos y construir una presencia digital coherente con lo que representan.
             </p>
             <p>
-              Creemos en la comunicación digital como una herramienta para crear comunidad, mejorar procesos y construir
-              vínculos más claros con las personas.
+              Creemos que cada detalle importa: desde un elemento gráfico, un texto o una publicación en redes, hasta la forma de agilizar un proceso cotidiano como la gestión de turnos o una inscripción.
+            </p>
+            <p>
+              Entendemos la comunicación digital como una herramienta para crear comunidad, mejorar procesos y construir vínculos más claros, humanos y accesibles con las personas.
             </p>
 
             <div className="about-values">

@@ -7,19 +7,23 @@ const steps = [
   },
   {
     title: 'Diagnosticamos',
-    description: 'Revisamos la presencia digital actual, los canales, el contenido y las oportunidades de mejora.',
+    description: 'Revisamos los canales de comunicación actuales para detectar oportunidades y definir el camino más conveniente.',
   },
   {
     title: 'Planificamos',
-    description: 'Definimos una estrategia posible, ordenada y adaptada a los recursos de cada organización.',
+    description: 'Diseñamos una estrategia ordenada y adaptada a cada proyecto, contemplando los recursos disponibles.',
   },
   {
     title: 'Producimos e implementamos',
-    description: 'Diseñamos piezas, contenidos, sitios web o soluciones digitales según el plan acordado.',
+    description: 'Creamos contenido, desarrollamos herramientas digitales y ponemos en marcha las acciones necesarias.',
+  },
+  {
+    title: 'Medimos y ajustamos',
+    description: 'Analizamos resultados continuamente para optimizar recursos y mejorar los procesos.',
   },
   {
     title: 'Acompañamos',
-    description: 'Medimos, ajustamos y sostenemos el proceso para que la comunicación crezca con sentido.',
+    description: 'No se trata de desarrollar un plan y desaparecer. Estamos presentes en cada etapa, acompañando el proceso y entendiendo las emociones que surgen cuando un proyecto se encuentra en transformación.',
   },
 ];
 

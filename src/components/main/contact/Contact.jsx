@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 import './Contact.css';
 
-const whatsappBase = 'https://wa.me/5493413570792';
+const whatsappBase = 'https://wa.me/5493413697253';
 
 export function Contact() {
   return (
@@ -11,8 +11,7 @@ export function Contact() {
         <div className="contact-card">
           <h2 className="contact-title">Hablemos de tu proyecto</h2>
           <p className="contact-text">
-            Contanos qué necesitás mejorar: tu comunicación digital, una web profesional, una aplicación o una solución
-            para ordenar procesos de salud.
+            No hace falta que tengas todo resuelto. Contanos qué necesitás y buscamos la mejor manera de acompañarte.
           </p>
 
           <div className="contact-actions">
