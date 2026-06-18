@@ -18,7 +18,7 @@ const services = [
   },
   {
     icon: Palette,
-    title: 'Producción de contenido',
+    title: 'Diseño gráfico y producción de contenido',
     description:
       'Creamos contenido alineado con la marca, cuidando tanto la estética como el mensaje para construir una presencia digital auténtica y memorable.',
     items: [
@@ -26,6 +26,8 @@ const services = [
       'Producción integral de contenido',
       'Servicio de fotografía y video',
       'Edición de imágenes y videos',
+      'Manual de marca',
+      'Diseño de logos y packaging',
     ],
   },
   {
