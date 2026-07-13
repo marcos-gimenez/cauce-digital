@@ -1,4 +1,5 @@
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { trackCauceMedClick, trackContactClick } from '../../../utils/analytics';
 import './Hero.css';
 
 export function Hero() {
@@ -24,7 +25,13 @@ proyecto pueda crecer de forma organizada, profesional y sostenible.
             </p>
 
             <div className="hero-buttons">
-              <a href="#contact" className="btn-primary">
+              <a
+                href="#contact"
+                className="btn-primary"
+                onClick={() =>
+                  trackContactClick('hero', 'Comunicación digital', '#contact')
+                }
+              >
                 Comunicación digital <ArrowRight size={20} color="white" />
               </a>
               <a href="#services" className="btn-outline">
@@ -35,6 +42,7 @@ proyecto pueda crecer de forma organizada, profesional y sostenible.
                 className="btn-outline"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackCauceMedClick('hero', 'https://caucemed.com.ar')}
               >
                 Conocer CauceMed
               </a>

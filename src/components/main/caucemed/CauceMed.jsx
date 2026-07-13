@@ -1,3 +1,4 @@
+import { trackCauceMedClick, trackContactClick } from '../../../utils/analytics';
 import './CauceMed.css';
 
 const benefits = [
@@ -44,10 +45,21 @@ export function CauceMed() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Conocer CauceMed en una nueva pestaña"
+              onClick={() => trackCauceMedClick('caucemed', 'https://caucemed.com.ar')}
             >
               Conocer CauceMed
             </a>
-            <a className="caucemed-secondary" href="#contact">
+            <a
+              className="caucemed-secondary"
+              href="#contact"
+              onClick={() =>
+                trackContactClick(
+                  'caucemed',
+                  'Soluciones digitales para salud',
+                  '#contact',
+                )
+              }
+            >
               Consultar por soluciones para salud
             </a>
           </div>

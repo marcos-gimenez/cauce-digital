@@ -2,6 +2,11 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+  trackContactClick,
+  trackEmailClick,
+  trackWhatsAppClick,
+} from '../../utils/analytics';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -45,7 +50,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a className="btn-navigation" href="#contact">
+                <a
+                  className="btn-navigation"
+                  href="#contact"
+                  onClick={() => trackContactClick('footer', undefined, '#contact')}
+                >
                   Contacto
                 </a>
               </li>
@@ -56,12 +65,21 @@ export function Footer() {
             <h4 className="footer-title">Contacto</h4>
             <ul className="footer-list">
               <li>
-                <a href="mailto:digitalcauce@gmail.com">digitalcauce@gmail.com</a>
+                <a
+                  href="mailto:digitalcauce@gmail.com"
+                  onClick={() => trackEmailClick('footer')}
+                >
+                  digitalcauce@gmail.com
+                </a>
               </li>
               <li>Fray Luis Beltrán, Santa Fe</li>
             </ul>
             <div className="footer-socials">
-              <a href="mailto:digitalcauce@gmail.com" aria-label="Enviar email a Cauce Digital">
+              <a
+                href="mailto:digitalcauce@gmail.com"
+                aria-label="Enviar email a Cauce Digital"
+                onClick={() => trackEmailClick('footer')}
+              >
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <a
@@ -86,6 +104,7 @@ export function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Enviar mensaje por WhatsApp a Cauce Digital"
+        onClick={() => trackWhatsAppClick('floating_button')}
       >
         <img src="/images/whatsapp.png" alt="WhatsApp" />
       </a>

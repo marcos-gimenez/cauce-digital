@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { trackContactClick } from '../../utils/analytics';
 import './Header.css';
 
 export function Header() {
@@ -32,7 +33,11 @@ export function Header() {
           <a className="btn-nav" href="#about">
             Nosotros
           </a>
-          <a className="btn-contact" href="#contact">
+          <a
+            className="btn-contact"
+            href="#contact"
+            onClick={() => trackContactClick('header', undefined, '#contact')}
+          >
             Contacto
           </a>
         </nav>
@@ -55,7 +60,16 @@ export function Header() {
             <a className="btn-nav" href="#hero" onClick={closeMenu}>Inicio</a>
             <a className="btn-nav" href="#services" onClick={closeMenu}>Servicios</a>
             <a className="btn-nav" href="#about" onClick={closeMenu}>Nosotros</a>
-            <a className="btn-contact" href="#contact" onClick={closeMenu}>Contacto</a>
+            <a
+              className="btn-contact"
+              href="#contact"
+              onClick={() => {
+                trackContactClick('header', undefined, '#contact');
+                closeMenu();
+              }}
+            >
+              Contacto
+            </a>
           </nav>
         )}
       </div>

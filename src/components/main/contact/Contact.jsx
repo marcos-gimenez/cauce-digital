@@ -1,4 +1,5 @@
 import { MessageCircle } from 'lucide-react';
+import { trackCauceMedClick, trackWhatsAppClick } from '../../../utils/analytics';
 import './Contact.css';
 
 const whatsappBase = 'https://wa.me/5493413697253';
@@ -20,6 +21,7 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="contact-button"
+              onClick={() => trackWhatsAppClick('contact')}
             >
               <MessageCircle size={22} />
               Hablemos de mi proyecto
@@ -29,6 +31,7 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="contact-button contact-button-secondary"
+              onClick={() => trackWhatsAppClick('contact', 'Comunicación digital')}
             >
               Quiero mejorar mi comunicación digital
             </a>
@@ -37,6 +40,7 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="contact-button contact-button-secondary"
+              onClick={() => trackWhatsAppClick('contact', 'Diseño web y aplicaciones')}
             >
               Consultar por una web o aplicación
             </a>
@@ -45,6 +49,7 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               className="contact-button contact-button-secondary"
+              onClick={() => trackCauceMedClick('contact', 'https://caucemed.com.ar')}
             >
               Conocer CauceMed
             </a>
